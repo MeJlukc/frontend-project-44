@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "bin": {
-	  "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js"
   },
   "description": "[![Actions Status](https://github.com/MeJlukc/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/MeJlukc/frontend-project-44/actions)",
   "main": "index.js",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/MeJlukc/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/MeJlukc/frontend-project-44#readme"
+  "homepage": "https://github.com/MeJlukc/frontend-project-44#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
