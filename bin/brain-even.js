@@ -1,4 +1,5 @@
 import { question } from "readline-sync";
+import { userName } from "../src/cli.js";
 
 // Описываем функцию проверки корректности ответа
 const isRight = (userAnswer, number) => {
@@ -14,7 +15,7 @@ const isRight = (userAnswer, number) => {
 };
 
 // Временно
-let name = 'yarik';
+// let name = 'yarik';
 //
 
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
@@ -33,11 +34,11 @@ while (isCorrect) {
         console.log('Correct!');
         i++;
         if (i === 3) {
-            console.log(`Congratulations, ${name}`);
+            console.log(`Congratulations, ${userName}`);
             break;
         }
     } else {
         isCorrect = false;
-        console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'\nLet's try again, ${name}`);
+        console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'\nLet's try again, ${userName}`);
     }
 }
