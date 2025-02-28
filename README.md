@@ -3,7 +3,6 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/4de9b10ac9589e543ad8/maintainability)](https://codeclimate.com/github/MeJlukc/frontend-project-44/maintainability)
 
-<<<<<<< HEAD
 Пример установки пакета, запуска игры с победой и поражением:  
 https://asciinema.org/a/ybT8QF45qjsb2D8tK2s9g8y6M
 =======
@@ -12,4 +11,3 @@ https://asciinema.org/a/ybT8QF45qjsb2D8tK2s9g8y6M
 
 Пример запуска игры "Калькулятор" с победой и поражением:
 https://asciinema.org/a/zzl3ZGmJSwIXh5eLyDgNRShBk
->>>>>>> 15f1b89 (updated README.md and .gitignore)
