@@ -8,3 +8,6 @@ https://asciinema.org/a/ybT8QF45qjsb2D8tK2s9g8y6M
 
 Пример запуска игры "Калькулятор" с победой и поражением:
 https://asciinema.org/a/zzl3ZGmJSwIXh5eLyDgNRShBk
+
+Примеры запуска игры "НОД" с победой и поражением:
+https://asciinema.org/a/Arzw3PE2b1LDcdILmfxMgHlje
