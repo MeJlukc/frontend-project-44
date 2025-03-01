@@ -14,3 +14,6 @@ https://asciinema.org/a/Arzw3PE2b1LDcdILmfxMgHlje
 
 Примеры запуска игры "Прогрессия" с победой и поражением:  
 https://asciinema.org/a/Kvx6ISksMyY8Pb8UmohJpqubG
+
+Примеры запуска игры "Простое число" с победой и поражением:  
+https://asciinema.org/a/DDr7ke9WWcbm8zSIB4vWbI80X
