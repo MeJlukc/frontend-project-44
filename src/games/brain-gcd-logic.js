@@ -3,20 +3,23 @@ import inGame from '../index.js';
 const gameDescription = 'Find the greatest common divisor of given numbers.';
 
 const findGcd = (number1, number2) => {
-  while (number2) {
-    const temp = number2;
-    number2 = number1 % number2;
-    number1 = temp;
+  let a = number1;
+  let b = number2;
+
+  while (b) {
+    const temp = b;
+    b = a % b;
+    a = temp;
   }
 
   return number1;
 };
 
 const generateQuestion = () => {
-  const num1 = Math.abs(Math.floor(Math.random() * 100));
-  const num2 = Math.abs(Math.floor(Math.random() * 100));
-  const question = `${num1} ${num2}`;
-  const correctAnswer = findGcd(num1, num2);
+  const number1 = Math.abs(Math.floor(Math.random() * 100));
+  const number2 = Math.abs(Math.floor(Math.random() * 100));
+  const question = `${number1} ${number2}`;
+  const correctAnswer = findGcd(number1, number2);
 
   return [question, String(correctAnswer)];
 };

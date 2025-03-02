@@ -23,6 +23,8 @@ const generateQuestion = () => {
       question = `${randNumber1} ${mathSign} ${randNumber2}`;
       correctAnswer = randNumber1 * randNumber2;
       break;
+    default:
+      break;
   }
 
   return [question, String(correctAnswer)];
