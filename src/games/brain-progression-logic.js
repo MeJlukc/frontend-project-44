@@ -1,4 +1,4 @@
-import { inGame } from '../index.js';
+import inGame from '../index.js';
 
 const gameDescription = 'What number is missing in the progression?';
 
@@ -8,7 +8,7 @@ const generateQuestion = () => {
   const progressiveLength = (Math.abs(Math.floor(Math.random() * 4)) + 5);
   const progressiveArray = [startNumber];
 
-  for (let i = 0; i < progressiveLength; i++) {
+  for (let i = 0; i < progressiveLength; i += 1) {
     progressiveArray.push(progressiveArray[i] + progressiveStep);
   }
 
@@ -21,6 +21,6 @@ const generateQuestion = () => {
   return [question, String(correctAnswer)];
 };
 
-export const brainProgression = () => {
+export default () => {
   inGame(gameDescription, generateQuestion);
 };

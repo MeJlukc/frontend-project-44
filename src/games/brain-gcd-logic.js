@@ -1,4 +1,4 @@
-import { inGame } from '../index.js';
+import inGame from '../index.js';
 
 const gameDescription = 'Find the greatest common divisor of given numbers.';
 
@@ -13,14 +13,14 @@ const findGcd = (number1, number2) => {
 };
 
 const generateQuestion = () => {
-  const number1 = Math.abs(Math.floor(Math.random() * 100));
-  const number2 = Math.abs(Math.floor(Math.random() * 100));
-  const question = `${number1} ${number2}`;
-  const correctAnswer = findGcd(number1, number2);
+  const num1 = Math.abs(Math.floor(Math.random() * 100));
+  const num2 = Math.abs(Math.floor(Math.random() * 100));
+  const question = `${num1} ${num2}`;
+  const correctAnswer = findGcd(num1, num2);
 
   return [question, String(correctAnswer)];
 };
 
-export const brainGcd = () => {
+export default () => {
   inGame(gameDescription, generateQuestion);
 };

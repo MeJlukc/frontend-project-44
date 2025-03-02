@@ -1,4 +1,4 @@
-import { inGame } from '../index.js';
+import inGame from '../index.js';
 
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 
@@ -9,6 +9,6 @@ const generateQuestion = () => {
   return [number, correctAnswer];
 };
 
-export const brainEven = () => {
+export default () => {
   inGame(gameDescription, generateQuestion);
 };

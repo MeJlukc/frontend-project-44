@@ -1,11 +1,11 @@
-import { inGame } from '../index.js';
+import inGame from '../index.js';
 
 const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (number) => {
   if (number === 1) return 'yes';
 
-  for (let i = 2; i < number; i++) {
+  for (let i = 2; i < number; i += 1) {
     if (number % i === 0) return 'no';
   }
 
@@ -19,6 +19,6 @@ const generateQuestion = () => {
   return [number, String(correctAnswer)];
 };
 
-export const brainPrime = () => {
+export default () => {
   inGame(gameDescription, generateQuestion);
 };

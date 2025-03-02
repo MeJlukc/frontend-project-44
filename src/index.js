@@ -1,6 +1,6 @@
 import readline from 'readline-sync';
 
-export const inGame = (gameDescription, generateQuestion) => {
+export default (gameDescription, generateQuestion) => {
   const roundsCounts = 3;
 
   console.log('Welcome to the Brain Games!');
@@ -9,7 +9,7 @@ export const inGame = (gameDescription, generateQuestion) => {
 
   console.log(gameDescription);
 
-  for (let i = 0; i < roundsCounts; i++) {
+  for (let i = 0; i < roundsCounts; i += 1) {
     const [question, correctAnswer] = generateQuestion();
 
     console.log(`Question: ${question}`);

@@ -1,4 +1,4 @@
-import { inGame } from '../index.js';
+import inGame from '../index.js';
 
 const gameDescription = 'What is the result of the expression?';
 
@@ -28,6 +28,6 @@ const generateQuestion = () => {
   return [question, String(correctAnswer)];
 };
 
-export const brainCalc = () => {
+export default () => {
   inGame(gameDescription, generateQuestion);
 };
