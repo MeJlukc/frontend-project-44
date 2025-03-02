@@ -5,7 +5,7 @@ const gameDescription = 'What number is missing in the progression?';
 const generateQuestion = () => {
     const startNumber = Math.abs(Math.floor(Math.random() * 50));
     const progressiveStep = Math.abs(Math.floor((Math.random() * 5) + 2));
-    const progressiveLength = Math.abs(Math.floor((Math.random() * 9) + 2));
+    const progressiveLength = (Math.abs(Math.floor(Math.random() * 4)) + 5);
     const progressiveArray = [startNumber];
 
     for (let i = 0; i < progressiveLength; i++) {
