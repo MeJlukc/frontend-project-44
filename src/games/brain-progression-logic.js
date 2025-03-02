@@ -21,6 +21,6 @@ const generateQuestion = () => {
     return [question, String(correctAnswer)];
 }
 
-export const brainProgressive = () => {
+export const brainProgression = () => {
     inGame(gameDescription, generateQuestion);
 }
