@@ -12,7 +12,7 @@ const findGcd = (number1, number2) => {
     a = temp;
   }
 
-  return number1;
+  return a;
 };
 
 const generateQuestion = () => {
