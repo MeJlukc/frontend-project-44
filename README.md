@@ -5,11 +5,11 @@
 * node.js (v. 18.19.x or above)
 
 ## Installation instruction:
+All actions are performed in CLI.  
 1. Clone the repository `git clone`
 2. Move in directory with the project `cd frontend-project-44`
 3. Run the command `npm install`
 4. Run the command `npm ci`  
-All actions are performed in CLI. 
 
 ## List of games and commands to start them:
 If you click on the game's title, you can see the gameplay.  
