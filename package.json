@@ -10,7 +10,7 @@
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js"
   },
-  "description": "[![Actions Status](https://github.com/MeJlukc/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/MeJlukc/frontend-project-44/actions)",
+  "description": "The console project consisting of five games",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,7 +19,7 @@
     "type": "git",
     "url": "git+https://github.com/MeJlukc/frontend-project-44.git"
   },
-  "author": "",
+  "author": "Yaroslav S.",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MeJlukc/frontend-project-44/issues"
