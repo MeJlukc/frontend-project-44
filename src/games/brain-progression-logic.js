@@ -1,22 +1,31 @@
 import startGame from '../index.js';
+import getRandomNumber from '../utils.js';
 
 const gameDescription = 'What number is missing in the progression?';
 
-const generateQuestion = () => {
-  const startNumber = Math.abs(Math.floor(Math.random() * 50));
-  const progressiveStep = Math.abs(Math.floor((Math.random() * 5) + 2));
-  const progressiveLength = (Math.abs(Math.floor(Math.random() * 4)) + 5);
-  const progressiveArray = [startNumber];
+const generateArray = (startNum, step, len) => {
+  const startNumber = startNum;
+  const arrayStep = step;
+  const arrayLength = len;
+  const array = [startNumber];
 
-  for (let i = 0; i < progressiveLength; i += 1) {
-    progressiveArray.push(progressiveArray[i] + progressiveStep);
+  for (let i = 0; i < arrayLength; i += 1) {
+    array.push(array[i] + arrayStep);
   }
 
-  const progressiveArrayWithSkip = progressiveArray;
-  const indexSkip = Math.abs(Math.floor(Math.random() * (progressiveLength - 1)));
-  const correctAnswer = progressiveArray[indexSkip];
-  progressiveArrayWithSkip[indexSkip] = '..';
-  const question = progressiveArrayWithSkip.join(' ');
+  return array;
+};
+
+const generateQuestion = () => {
+  const startNumber = getRandomNumber(1, 50);
+  const arrayStep = getRandomNumber(1, 5) + 2;
+  const arrayLength = getRandomNumber(5, 10) + 5;
+
+  const readyArray = generateArray(startNumber, arrayStep, arrayLength);
+  const indexSkip = getRandomNumber(0, arrayLength - 1);
+  const correctAnswer = readyArray[indexSkip];
+  readyArray[indexSkip] = '..';
+  const question = readyArray.join(' ');
 
   return [question, String(correctAnswer)];
 };
