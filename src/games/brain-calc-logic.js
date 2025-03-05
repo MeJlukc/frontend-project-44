@@ -13,7 +13,7 @@ const calculate = (number1, number2, mathSign) => {
       return number1 * number2;
     default:
       break;
-  };
+  }
 };
 
 const generateQuestion = () => {
