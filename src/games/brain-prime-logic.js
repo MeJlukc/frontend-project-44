@@ -1,4 +1,4 @@
-import inGame from '../index.js';
+import startGame from '../index.js';
 
 const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -20,5 +20,5 @@ const generateQuestion = () => {
 };
 
 export default () => {
-  inGame(gameDescription, generateQuestion);
+  startGame(gameDescription, generateQuestion);
 };

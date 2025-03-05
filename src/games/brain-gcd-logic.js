@@ -1,4 +1,4 @@
-import inGame from '../index.js';
+import startGame from '../index.js';
 
 const gameDescription = 'Find the greatest common divisor of given numbers.';
 
@@ -25,5 +25,5 @@ const generateQuestion = () => {
 };
 
 export default () => {
-  inGame(gameDescription, generateQuestion);
+  startGame(gameDescription, generateQuestion);
 };

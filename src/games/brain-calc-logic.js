@@ -1,4 +1,4 @@
-import inGame from '../index.js';
+import startGame from '../index.js';
 
 const gameDescription = 'What is the result of the expression?';
 
@@ -31,5 +31,5 @@ const generateQuestion = () => {
 };
 
 export default () => {
-  inGame(gameDescription, generateQuestion);
+  startGame(gameDescription, generateQuestion);
 };

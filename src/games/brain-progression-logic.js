@@ -1,4 +1,4 @@
-import inGame from '../index.js';
+import startGame from '../index.js';
 
 const gameDescription = 'What number is missing in the progression?';
 
@@ -22,5 +22,5 @@ const generateQuestion = () => {
 };
 
 export default () => {
-  inGame(gameDescription, generateQuestion);
+  startGame(gameDescription, generateQuestion);
 };

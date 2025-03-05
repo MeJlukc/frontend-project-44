@@ -1,4 +1,4 @@
-import inGame from '../index.js';
+import startGame from '../index.js';
 
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 
@@ -10,5 +10,5 @@ const generateQuestion = () => {
 };
 
 export default () => {
-  inGame(gameDescription, generateQuestion);
+  startGame(gameDescription, generateQuestion);
 };
