@@ -3,27 +3,17 @@ import getRandomNumber from '../utils.js';
 
 const gameDescription = 'What is the result of the expression?';
 
-const calculate = (num1, num2, mathSymb) => {
-  const number1 = num1;
-  const number2 = num2;
-  const mathSign = mathSymb;
-  let result;
-
+const calculate = (number1, number2, mathSign) => {
   switch (mathSign) {
     case '+':
-      result = number1 + number2;
-      break;
+      return number1 + number2;
     case '-':
-      result = number1 - number2;
-      break;
+      return number1 - number2;
     case '*':
-      result = number1 * number2;
-      break;
+      return number1 * number2;
     default:
       break;
-  }
-
-  return result;
+  };
 };
 
 const generateQuestion = () => {

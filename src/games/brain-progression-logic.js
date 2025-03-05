@@ -18,8 +18,8 @@ const generateArray = (startNum, step, len) => {
 
 const generateQuestion = () => {
   const startNumber = getRandomNumber(1, 50);
-  const arrayStep = getRandomNumber(1, 5) + 2;
-  const arrayLength = getRandomNumber(5, 10) + 5;
+  const arrayStep = getRandomNumber(2, 5);
+  const arrayLength = getRandomNumber(7, 13);
 
   const readyArray = generateArray(startNumber, arrayStep, arrayLength);
   const indexSkip = getRandomNumber(0, arrayLength - 1);
