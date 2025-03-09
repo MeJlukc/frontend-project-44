@@ -14,8 +14,6 @@ const calculate = (number1, number2, mathSign) => {
     default:
       break;
   }
-
-  return undefined;
 };
 
 const generateQuestion = () => {
