@@ -1,3 +1,5 @@
+/* eslint-disable consistent-return */
+
 import startGame from '../index.js';
 import getRandomNumber from '../utils.js';
 
@@ -14,8 +16,6 @@ const calculate = (number1, number2, mathSign) => {
     default:
       break;
   }
-
-  return undefined;
 };
 
 const generateQuestion = () => {
